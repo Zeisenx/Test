@@ -85,7 +85,7 @@
         document.getElementById('startButton').addEventListener('click', async () => {
             const previewElem = document.querySelector('video');
             const controls = await codeReader.decodeFromVideoDevice(selectedDeviceId, previewElem, (result, error, controls) => {
-
+                alert(result);
             });
             console.log(`Started continous decode from camera with id ${selectedDeviceId}`)
         })
